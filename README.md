@@ -97,8 +97,7 @@ We will follow the PTES (Penetration Testing Execution Standard) framework:
 
 ---
 ## Phase 4: Reporting
-# 📄  The Final Report 
-[📎 The Report](https://raw.githubusercontent.com/your-username/your-repo/main/docs/report.pdf)
+### 📄  The Final Report : [📎 The Report](https://raw.githubusercontent.com/your-username/your-repo/main/docs/report.pdf)
 
 ---
 ###  Setting Up the Testing Environment
