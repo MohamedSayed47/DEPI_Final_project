@@ -90,13 +90,14 @@ We will follow the PTES (Penetration Testing Execution Standard) framework:
 | 🎯 Exploitation           | Metasploit, Hydra, SQLmap |
 | 📄 Reporting              | PDF && Markdown Reports |
 ---
-##Phase 2: Scanning & Enumeration
+## Phase 2: Scanning & Enumeration
 
 ---
 ## Phase 3: Exploitation
 
 ---
-### 📄  The Final Report 
+## Phase 4: Reporting
+# 📄  The Final Report 
 [📎 The Report](https://raw.githubusercontent.com/your-username/your-repo/main/docs/report.pdf)
 
 ---
@@ -111,5 +112,5 @@ We will follow the PTES (Penetration Testing Execution Standard) framework:
 
 | ![John Doe](https://via.placeholder.com/100) | ![Jane Smith](https://via.placeholder.com/100) | ![Michael Brown](https://via.placeholder.com/100) | ![Emily Davis](https://via.placeholder.com/100) |
 |---|---|---|---|
-| **Mohamed Sayed Maher** | ** Waleed Khalid Edress** | **Abdelrahman tarek farouk** | **Ahmed Mohamed Ahmed Elganagy** |
+| **Mohamed Sayed Maher** | **Waleed Khalid Edress** | **Abdelrahman tarek farouk** | **Ahmed Mohamed Ahmed Elganagy** |
 | [LinkedIn](https://www.linkedin.com/in/mohamed-saye/) | [LinkedIn](https://www.linkedin.com/in/janesmith) | [LinkedIn](https://www.linkedin.com/in/michaelbrown) | [LinkedIn](https://www.linkedin.com/in/emilydavis) |
