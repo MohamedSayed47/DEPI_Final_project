@@ -129,7 +129,7 @@ Ethical exploitation was conducted on high-risk services. Successful attacks inc
 
 ## **💻 Setting Up the Lab**
 
-- ✅ Download & install Metasploitable 2 from : [📎 SourceForge](https://raw.githubusercontent.com/your-username/your-repo/main/docs/report.pdf](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/)
+- ✅ Download & install Metasploitable 2 from : [📎 SourceForge](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/).
 - ✅ Import into VirtualBox or VMware  
 - ✅ Set network to NAT or Host-Only for isolation  
 
