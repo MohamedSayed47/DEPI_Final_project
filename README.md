@@ -1,6 +1,8 @@
+![DEPI](https://media.licdn.com/dms/image/v2/D4D0BAQFNQpCaHl_CPw/company-logo_200_200/company-logo_200_200/0/1702455160827/digital_egypt_pioneers_initiative_depi_logo?e=2147483647&v=beta&t=O2rai_g0FzHFaE4ynebZgFGwPjWmsEpkUC1QrA0wTOg)
 # **Network Penetration Testing Project Planning & Management**
 
 ## **1. Project Proposal**
+
 ### **1.1 Project Title**
 **Network Penetration Testing on Metasploitable 2**
 
@@ -14,103 +16,127 @@ This project focuses on conducting a **comprehensive network penetration test** 
 
 ### **1.4 Scope**
 ✅ **In-Scope:**
-- **Network Services:** FTP, Java RMI, SMB, RSH, SMTP, NFS, Apache,PostgreSQL
-- **Attack Methods:**  Scanning, Enumeration, Exploitation
-- **Tools Used:** Nmap, OpenVAS, Metasploit, Enum4Linux, Hydra
+- **Network Services:** FTP, Java RMI, SMB, UnrealIRCd, VNC, Telnet, Apache Tomcat, SMTP
+- **Attack Methods:** Scanning, Enumeration, Exploitation
+- **Tools Used:** Nmap, Nessus, Metasploit, Enum4Linux
 
 ❌ **Out of Scope:**
 - Testing external networks (only controlled lab environment)
 - Denial-of-Service (DoS) attacks
+
 ---
 
 ## **2. Project Plan**
 
 ### **2.1 Timeline (Gantt Chart)**
-| **Phase** | **Task** | **Duration** |
-|----------|---------|------------|
-| **Phase 1: Planning** | Define scope, methodology, tools | 📅 1 day |
-| **Phase 2: Scanning & Enumeration** | OpenVAS, Nmap, Enum4Linux scans | 📅 2 days |
-| **Phase 3: Exploitation** | Attacking FTP, Java RMI, SMB, RSH, SMTP, NFS, Apache,PostgreSQL | 📅 4 days |
-| **Phase 4: Reporting** | Writing findings & recommendations | 📅 2 days |
+
+| **Phase**              | **Task**                                     | **Duration** |
+|------------------------|----------------------------------------------|--------------|
+| **Phase 1: Planning**  | Define scope, methodology, tools              | 📅 1 day     |
+| **Phase 2: Scanning & Enumeration** | Run Nmap, Nessus, Enum4Linux          | 📅 2 days    |
+| **Phase 3: Exploitation**           | Exploit services like FTP, SMB, RMI    | 📅 4 days    |
+| **Phase 4: Maintaining Access**           | Foothold in the target system  | 📅 2 days    |
+| **Phase 5: Reporting** | Write findings & remediation report           | 📅 2 days    |
 
 ### Milestones & Deliverables
-
-- ✅ **Milestone 1:** Scanning phase completed with service enumeration  
-- ✅ **Milestone 2:** Successful exploitation with proof-of-concepts  
-- ✅ **Milestone 3:** Final penetration testing report delivered  
+- ✅ **Milestone 1:** Initial scan and enumeration complete  
+- ✅ **Milestone 2:** Exploitation phase with PoC  
+- ✅ **Milestone 3:** Final report with detailed vulnerabilities and recommendations  
 
 ---
 
 ## **3. Task Assignment & Roles**
 
-| **Team Member**     | **Role**               | **Responsibilities** |
-|---------------------|----------------------|----------------------|
-| Mohamed Sayed Maher        | Ethical Hacker        | Planning, tool selection, final report review |
-| Waleed Khalid Edress    | Ethical Hacker     | Scanning & enumeration |
-| Abdelrahman tarek farouk  | Ethical Hacker       | Exploitation & vulnerability testing |
-| Ahmed Mohamed Ahmed Elganagy   | Ethical Hacker | Report writing & recommendations |
+| **Team Member**                 | **Role**           | **Responsibilities**                           |
+|--------------------------------|--------------------|------------------------------------------------|
+| Mohamed Sayed Maher             | Ethical Hacker     | FTP , Java RMI |
+| Waleed Khalid Edress           | Ethical Hacker     | SMB , UnrealIRCd        |
+| Abdelrahman Tarek Farouk       | Ethical Hacker     | SMTP , VNC          |
+| Ahmed Mohamed Ahmed Elganagy   | Ethical Hacker     | Telnet , Apache Tomcat               |
 
 ---
-## Phase 1: Planning
 
-### 1.1 Scope
+## **Phase 1: Planning**
 
-Since we are working on Metasploitable 2, our focus is strictly on network vulnerabilities:
+### 1.1 Scope of Testing
 
-**Service** | **Port**
-----------|---------
-FTP       | 21
-Rsh       | 512
-NFS       | 23
-Java RMI  | 1009
-SMB       | 139, 445
-IRC       | 6697
-PostgreSQL| 5432
-HTTP      | 8180
+| **Port** | **Service**        |
+|----------|--------------------|
+| 21       | FTP                |
+| 25       | SMTP               |
+| 1099     | Java RMI           |
+| 445      | SMB (Samba)        |
+| 6667     | UnrealIRCd         |
+| 5900     | VNC                |
+| 23       | Telnet             |
+| 8180     | Apache Tomcat      |
 
 ⛔ **Out of Scope:**
+- Physical security
+- DoS attacks
 
-* Physical security attacks
-* Denial-of-Service (DoS)
+### 1.2 Methodology
 
+Following **PTES (Penetration Testing Execution Standard)**:
 
-### 1.2 Methodology (Testing Approach)
+1. **Scanning & Enumeration** – Identify open ports/services
+2. **Exploitation** – Gain unauthorized access where possible
+3. **Maintaining Access** – Establishing a persistent foothold in the target system
 
-We will follow the PTES (Penetration Testing Execution Standard) framework:
+### 1.3 Tools Used
 
-* Scanning & Enumeration – Gather system information.
-* Exploitation – Attempt to gain unauthorized access.
-* Post-Exploitation & Reporting – Document findings and recommend fixes.
-
-### 1.3 Tools Selection
-
-| Phase                     | Tool(s) Used           |
-|---------------------------|------------------------|
-| 🔍 Scanning & Enumeration | Nmap, OpenVAS, Enum4Linux |
-| 🎯 Exploitation           | Metasploit, Hydra, SQLmap |
-| 📄 Reporting              | PDF && Markdown Reports |
----
-## Phase 2: Scanning & Enumeration
+| **Phase**              | **Tools**                          |
+|------------------------|------------------------------------|
+| Scanning & Enumeration | Nmap, Nessus, Enum4Linux,smbmap          |
+| Exploitation           | Metasploit, Manual Scripts  |
+| Reporting              | PDF                      |
 
 ---
-## Phase 3: Exploitation
+
+## **Phase 2: Scanning & Enumeration**
+
+All major ports and services were scanned. Vulnerabilities discovered are listed below.
+
+| **Port** | **Service**        | **Vulnerability**            | **Description**                                                                 | **CVE**            | **Exploitability** |
+|----------|--------------------|------------------------------|---------------------------------------------------------------------------------|--------------------|---------------------|
+| 21       | FTP (vsftpd)       | Backdoor RCE                 | Hidden backdoor in vsftpd 2.3.4 allows remote command execution                 | CVE-2011-2523      | High                |
+| 25       | SMTP (Postfix)     | Misconfiguration             | Allows unauthorized relaying or user enumeration                                | -                  | Medium              |
+| 1099     | Java RMI           | Deserialization RCE          | Remote code execution via unsafe Java object deserialization                    | CVE-2011-3556      | High                |
+| 445      | SMB (Samba)        | Usermap Script RCE           | Command injection through the Samba “username map script”                       | CVE-2007-2447      | High                |
+| 6667     | UnrealIRCd         | Backdoor RCE                 | Backdoor allows execution of commands sent via IRC                              | CVE-2010-2075      | High                |
+| 5900     | VNC                | Weak Credentials             | Access possible using default/weak passwords                                    | -                  | Medium              |
+| 23       | Telnet             | Default Credentials          | Accepts login using default system credentials                                  | -                  | Medium              |
+| 8180     | Apache Tomcat      | Weak Credentials + Upload    | Default credentials allow panel access for web shell deployment                 | CVE-2009-3548      | High                |
 
 ---
-## Phase 4: Reporting
+
+## **Phase 3: Exploitation**
+
+Ethical exploitation was conducted on high-risk services. Successful attacks include:
+
+- FTP backdoor shell access
+- Java RMI code execution
+- Samba RCE
+- Tomcat WAR file deployment
+- IRC remote commands
+- Telnet access via default creds
+
+---
+
+## **Phase 4: Reporting**
 ### 📄  The Final Report : [📎 The Report](https://raw.githubusercontent.com/your-username/your-repo/main/docs/report.pdf)
+---
+
+## **💻 Setting Up the Lab**
+
+- ✅ Download & install Metasploitable 2 from : [📎 SourceForge](https://raw.githubusercontent.com/your-username/your-repo/main/docs/report.pdf](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/)
+- ✅ Import into VirtualBox or VMware  
+- ✅ Set network to NAT or Host-Only for isolation  
 
 ---
-###  Setting Up the Testing Environment
 
-* ✅ Download & Install Metasploitable 2 → SourceForge
-* ✅ Use VirtualBox or VMware → Import Metasploitable 2
-* ✅ Network Configuration → Set to NAT or Host-Only
+## **👥 Team Members**
 
----
-### **👥 Team Members**
-
-
-
-| **Mohamed Sayed Maher** | **Waleed Khalid Edress** | **Abdelrahman tarek farouk** | **Ahmed Mohamed Ahmed Elganagy** |
-|---|---|---|---|
-| [LinkedIn](https://www.linkedin.com/in/mohamed-saye/) | [LinkedIn](https://www.linkedin.com/in/janesmith) | [LinkedIn](https://www.linkedin.com/in/michaelbrown) | [LinkedIn](https://www.linkedin.com/in/emilydavis) |
+| **Mohamed Sayed Maher** | **Waleed Khalid Edress** | **Abdelrahman Tarek Farouk** | **Ahmed Mohamed Ahmed Elganagy** |
+|-------------------------|--------------------------|-------------------------------|----------------------------------|
+| [LinkedIn](https://www.linkedin.com/in/mohamed-saye/) | [LinkedIn](https://www.linkedin.com/in/waleed-aboglail-09a6b226b/) | [LinkedIn](https://www.linkedin.com/in/abdelrahman-tarek-26a196264/) | [LinkedIn](https://www.linkedin.com/in/ahmedelganagy/) |
