@@ -10,17 +10,17 @@
 This project focuses on conducting a **comprehensive network penetration test** on the **Metasploitable 2** virtual machine. The objective is to identify security vulnerabilities, ethically exploit them, and provide actionable remediation recommendations to enhance security.
 
 ### **1.3 Objectives**
-- 🔍 Perform network scanning and enumeration to detect open ports and running services.
-- 🎯 Exploit known vulnerabilities in Metasploitable 2 using ethical hacking techniques.
-- 📄 Document findings and suggest effective mitigation strategies.
+- Perform network scanning and enumeration to detect open ports and running services.
+-  Exploit known vulnerabilities in Metasploitable 2 using ethical hacking techniques.
+-  Document findings and suggest effective mitigation strategies.
 
 ### **1.4 Scope**
-✅ **In-Scope:**
+ **In-Scope:**
 - **Network Services:** FTP, Java RMI, SMB, UnrealIRCd, VNC, Telnet, Apache Tomcat, SMTP
 - **Attack Methods:** Scanning, Enumeration, Exploitation
 - **Tools Used:** Nmap, Nessus, Metasploit, Enum4Linux
 
-❌ **Out of Scope:**
+**Out of Scope:**
 - Testing external networks (only controlled lab environment)
 - Denial-of-Service (DoS) attacks
 
@@ -32,16 +32,16 @@ This project focuses on conducting a **comprehensive network penetration test** 
 
 | **Phase**              | **Task**                                     | **Duration** |
 |------------------------|----------------------------------------------|--------------|
-| **Phase 1: Planning**  | Define scope, methodology, tools              | 📅 1 day     |
-| **Phase 2: Scanning & Enumeration** | Run Nmap, Nessus, Enum4Linux          | 📅 2 days    |
-| **Phase 3: Exploitation**           | Exploit services like FTP, SMB, RMI    | 📅 4 days    |
-| **Phase 4: Maintaining Access**           | Foothold in the target system  | 📅 2 days    |
-| **Phase 5: Reporting** | Write findings & remediation report           | 📅 2 days    |
+| **Phase 1: Planning**  | Define scope, methodology, tools              |  1 day     |
+| **Phase 2: Scanning & Enumeration** | Run Nmap, Nessus, Enum4Linux          | 2 days    |
+| **Phase 3: Exploitation**           | Exploit services like FTP, SMB, RMI    | 4 days    |
+| **Phase 4: Maintaining Access**           | Foothold in the target system  |  2 days    |
+| **Phase 5: Reporting** | Write findings & remediation report           |  2 days    |
 
 ### Milestones & Deliverables
-- ✅ **Milestone 1:** Initial scan and enumeration complete  
-- ✅ **Milestone 2:** Exploitation phase with PoC  
-- ✅ **Milestone 3:** Final report with detailed vulnerabilities and recommendations  
+-  **Milestone 1:** Initial scan and enumeration complete  
+- **Milestone 2:** Exploitation phase with PoC  
+-  **Milestone 3:** Final report with detailed vulnerabilities and recommendations  
 
 ---
 
@@ -71,7 +71,7 @@ This project focuses on conducting a **comprehensive network penetration test** 
 | 23       | Telnet             |
 | 8180     | Apache Tomcat      |
 
-⛔ **Out of Scope:**
+**Out of Scope:**
 - Physical security
 - DoS attacks
 
@@ -129,9 +129,9 @@ Ethical exploitation was conducted on high-risk services. Successful attacks inc
 
 ## **💻 Setting Up the Lab**
 
-- ✅ Download & install Metasploitable 2 from : [📎 SourceForge](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/).
-- ✅ Import into VirtualBox or VMware  
-- ✅ Set network to NAT or Host-Only for isolation  
+-  Download & install Metasploitable 2 from : [📎 SourceForge](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/).
+- Import into VirtualBox or VMware  
+- Set network to NAT or Host-Only for isolation  
 
 ---
 
