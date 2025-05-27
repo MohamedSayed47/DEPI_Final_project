@@ -127,8 +127,25 @@ Ethical exploitation was conducted on high-risk services. Successful attacks inc
 - Telnet access via default creds
 
 ---
+## **Phase 4: Maintaining Access**
 
-## **Phase 4: Reporting**
+Ensure ongoing access to compromised systems and the techniques for escalating privileges.
+- Scheduled Tasks
+- Persistent Backdoors
+- Adding a New User with Root Privileges
+  
+ ---
+## **Phase 5:  Covering Tracks**
+
+Remove or obfuscate any evidence of your activities on the compromised system.
+
+- Remove Created User
+- Delete Reverse Shell
+- Delete the Scheduled task
+
+---
+  
+## **Phase 6: Reporting**
 ### 📄  The Final Report : [📎 The Report](https://github.com/MohamedSayed47/DEPI_Final_project/blob/main/DEPI-final%20project.pdf)
 ---
 
@@ -136,7 +153,7 @@ Ethical exploitation was conducted on high-risk services. Successful attacks inc
 
 -  Download & install Metasploitable 2 from : [📎 SourceForge](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/).
 - Import into VirtualBox or VMware  
-- Set network to NAT or Host-Only for isolation  
+- Set the network to NAT or Host-Only for isolation  
 
 ---
 
