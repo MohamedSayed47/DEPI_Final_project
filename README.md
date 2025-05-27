@@ -36,6 +36,7 @@ This project focuses on conducting a **comprehensive network penetration test** 
 | **Phase 2: Scanning & Enumeration** | Run Nmap, Nessus, Enum4Linux          | 2 days    |
 | **Phase 3: Exploitation**           | Exploit services like FTP, SMB, RMI    | 4 days    |
 | **Phase 4: Maintaining Access**           | Foothold in the target system  |  2 days    |
+| **Phase 4: Covering Tracks**           |  Erase all tracks leading the investigators to trace you  |  2 days    |
 | **Phase 5: Reporting** | Write findings & remediation report           |  2 days    |
 
 ### Milestones & Deliverables
@@ -82,6 +83,8 @@ Following **PTES (Penetration Testing Execution Standard)**:
 1. **Scanning & Enumeration** – Identify open ports/services
 2. **Exploitation** – Gain unauthorized access where possible
 3. **Maintaining Access** – Establishing a persistent foothold in the target system
+4. **Covering Tracks** – Erase all tracks leading the investigators to trace you
+
 
 ### 1.3 Tools Used
 
@@ -89,6 +92,8 @@ Following **PTES (Penetration Testing Execution Standard)**:
 |------------------------|------------------------------------|
 | Scanning & Enumeration | Nmap, Nessus, Enum4Linux,smbmap          |
 | Exploitation           | Metasploit, Manual Scripts  |
+| Maintaining Access     | Netcat, Bash Scripts  |
+| Covering Tracks        | Manual  |
 | Reporting              | PDF                      |
 
 ---
