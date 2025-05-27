@@ -125,16 +125,16 @@ Ethical exploitation was conducted on high-risk services. Successful attacks inc
 - Tomcat WAR file deployment
 - IRC remote commands
 - Telnet access via default creds
-
 ---
+
 ## **Phase 4: Maintaining Access**
 
 Ensure ongoing access to compromised systems and the techniques for escalating privileges.
 - Scheduled Tasks
 - Persistent Backdoors
 - Adding a New User with Root Privileges
-  
  ---
+ 
 ## **Phase 5:  Covering Tracks**
 
 Remove or obfuscate any evidence of your activities on the compromised system.
@@ -142,8 +142,8 @@ Remove or obfuscate any evidence of your activities on the compromised system.
 - Remove Created User
 - Delete Reverse Shell
 - Delete the Scheduled task
-
 ---
+
   
 ## **Phase 6: Reporting**
 ### 📄  The Final Report : [📎 The Report](https://github.com/MohamedSayed47/DEPI_Final_project/blob/main/DEPI-final%20project.pdf)
