@@ -17,8 +17,8 @@ This project focuses on conducting a **comprehensive network penetration test** 
 ### **1.4 Scope**
  **In-Scope:**
 - **Network Services:** FTP, Java RMI, SMB, UnrealIRCd, VNC, Telnet, Apache Tomcat, SMTP
-- **Attack Methods:** Scanning, Enumeration, Exploitation
-- **Tools Used:** Nmap, Nessus, Metasploit, Enum4Linux
+- **Attack Methods:** Scanning, Enumeration, Exploitation, Maintaining Access, Covering Tracks
+- **Tools Used:** Nmap, Nessus, Metasploit, Enum4Linux, Netcat 
 
 **Out of Scope:**
 - Testing external networks (only controlled lab environment)
@@ -36,8 +36,8 @@ This project focuses on conducting a **comprehensive network penetration test** 
 | **Phase 2: Scanning & Enumeration** | Run Nmap, Nessus, Enum4Linux          | 2 days    |
 | **Phase 3: Exploitation**           | Exploit services like FTP, SMB, RMI    | 4 days    |
 | **Phase 4: Maintaining Access**           | Foothold in the target system  |  2 days    |
-| **Phase 4: Covering Tracks**           |  Erase all tracks leading the investigators to trace you  |  2 days    |
-| **Phase 5: Reporting** | Write findings & remediation report           |  2 days    |
+| **Phase 5: Covering Tracks**           |  Erase all tracks leading the investigators to trace you  |  2 days    |
+| **Phase 6: Reporting** | Write findings & remediation report           |  2 days    |
 
 ### Milestones & Deliverables
 -  **Milestone 1:** Initial scan and enumeration complete  
